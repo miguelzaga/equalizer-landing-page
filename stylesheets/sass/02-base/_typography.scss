@@ -2,3 +2,21 @@ body {
     font-family: $font-ibm;
     color: $black;
 }
+
+h1 {
+    font-weight: bold;
+    font-size: rem(88px);
+    line-height: rem(88px);
+    letter-spacing: rem(-1px);
+}
+
+h2 {
+    font-weight: bold;
+    font-size: rem(40px);
+    line-height: rem(52px);
+}
+
+p {
+    font-size: rem(20px);
+    line-height: rem(34px);
+}
