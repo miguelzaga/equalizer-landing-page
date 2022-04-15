@@ -1,0 +1,40 @@
+@mixin btn {
+  width: rem(333px);
+  height: rem(61px);
+  border-radius: rem(12px);
+  border: none;
+  font-size: rem(18px);
+  font-weight: bold;
+}
+
+@mixin icon-right {
+  margin-right: 0.2rem;
+}
+
+.btn-ios {
+  @include btn();
+  background-color: $black;
+  color: $white;
+}
+
+.btn-ios:hover {
+  background-color: $cyan;
+}
+
+.btn-ios__icon {
+  @include icon-right();
+  vertical-align: middle;
+}
+
+.btn-android {
+  @include btn();
+  background-color: $white;
+}
+
+.btn-android:hover {
+  background-color: $yellow;
+}
+
+.btn-android__icon {
+  @include icon-right();
+}

@@ -66,4 +66,42 @@ body {
   color: #191826;
 }
 
+.btn-ios {
+  width: 20.8125rem;
+  height: 3.8125rem;
+  border-radius: 0.75rem;
+  border: none;
+  font-size: 1.125rem;
+  font-weight: bold;
+  background-color: #191826;
+  color: #FCFAF9;
+}
+
+.btn-ios:hover {
+  background-color: #66E2DC;
+}
+
+.btn-ios__icon {
+  margin-right: 0.2rem;
+  vertical-align: middle;
+}
+
+.btn-android {
+  width: 20.8125rem;
+  height: 3.8125rem;
+  border-radius: 0.75rem;
+  border: none;
+  font-size: 1.125rem;
+  font-weight: bold;
+  background-color: #FCFAF9;
+}
+
+.btn-android:hover {
+  background-color: #FFB964;
+}
+
+.btn-android__icon {
+  margin-right: 0.2rem;
+}
+
 /*# sourceMappingURL=style.css.map */
