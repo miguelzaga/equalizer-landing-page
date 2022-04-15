@@ -1,16 +1,3 @@
-@mixin btn {
-  width: rem(333px);
-  height: rem(61px);
-  border-radius: rem(12px);
-  border: none;
-  font-size: rem(18px);
-  font-weight: bold;
-}
-
-@mixin icon-right {
-  margin-right: 0.2rem;
-}
-
 .btn-ios {
   @include btn();
   background-color: $black;
