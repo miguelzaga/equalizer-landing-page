@@ -54,15 +54,13 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Building Our Sass Architecture](https://css-irl.info/a-modern-front-end-workflow-part-3/) - This helped me to organize my Sass files.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
 - Frontend Mentor - [@miguelzaga](https://www.frontendmentor.io/profile/miguelzaga)
 - Linkedin - [Miguel Zapata](https://www.linkedin.com/in/miguelzaga/)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
