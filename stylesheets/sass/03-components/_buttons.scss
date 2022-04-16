@@ -31,6 +31,7 @@
 .btn-android {
   @include btn();
   background-color: $white;
+  color: $black;
 }
 
 .btn-android:hover {
