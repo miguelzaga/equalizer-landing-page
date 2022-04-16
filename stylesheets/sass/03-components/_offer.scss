@@ -30,6 +30,7 @@
 
 .offer__card {
     width: 100vw;
+    height: rem(546px);
     position: relative;
     left: -$side-margin;
     bottom: rem(48px);
@@ -52,7 +53,7 @@
 }
 
 .offer__info {
-    margin: 2rem 0;
+    margin: 2rem 0 2rem 0.5rem;
     display: flex;
     align-items: center;
 }

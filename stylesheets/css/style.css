@@ -140,6 +140,7 @@ p {
 
 .offer__card {
   width: 100vw;
+  height: 34.125rem;
   position: relative;
   left: -1.5rem;
   bottom: 3rem;
@@ -162,7 +163,7 @@ p {
 }
 
 .offer__info {
-  margin: 2rem 0;
+  margin: 2rem 0 2rem 0.5rem;
   display: flex;
   align-items: center;
 }
@@ -176,8 +177,9 @@ p {
 
 .btn-ios {
   max-width: 20.8125rem;
-  width: 100%;
+  width: clamp(18.5rem, 60%, 20.8125rem);
   height: 3.8125rem;
+  margin-left: 0.5rem;
   border-radius: 0.75rem;
   border: none;
   font-size: 1.125rem;
@@ -199,8 +201,9 @@ p {
 
 .btn-android {
   max-width: 20.8125rem;
-  width: 100%;
+  width: clamp(18.5rem, 60%, 20.8125rem);
   height: 3.8125rem;
+  margin-left: 0.5rem;
   border-radius: 0.75rem;
   border: none;
   font-size: 1.125rem;
