@@ -1,8 +1,7 @@
 @mixin btn {
-  max-width: rem(333px);
-  width: clamp(rem(296px), 60%, rem(333px));
+  width: 100%;
+  max-width: rem(296px);
   height: rem(61px);
-  margin-left: 0.5rem;
   border-radius: rem(12px);
   border: none;
   font-size: rem(18px);
@@ -18,7 +17,6 @@
   @include btn();
   background-color: $black;
   color: $white;
-  margin-bottom: 1rem;
 }
 
 .btn-ios:hover {

@@ -61,6 +61,10 @@ body {
   height: 100%;
 }
 
+button {
+  padding: 0;
+}
+
 body {
   background-color: #fcfaf9;
   font-family: "IBM Plex Sans", sans-serif;
@@ -151,7 +155,6 @@ p {
 
 .offer__card {
   width: 100vw;
-  height: 34.125rem;
   position: relative;
   left: -1.5rem;
   bottom: 3rem;
@@ -186,11 +189,21 @@ p {
   margin-right: 1rem;
 }
 
-.btn-ios {
-  max-width: 20.8125rem;
-  width: clamp(18.5rem, 60%, 20.8125rem);
-  height: 3.8125rem;
+.offer__btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-left: 0.5rem;
+}
+
+.offer__btn-ios {
+  margin-bottom: 1rem;
+}
+
+.btn-ios {
+  width: 100%;
+  max-width: 18.5rem;
+  height: 3.8125rem;
   border-radius: 0.75rem;
   border: none;
   font-size: 1.125rem;
@@ -198,7 +211,6 @@ p {
   line-height: 2rem;
   background-color: #191826;
   color: #fcfaf9;
-  margin-bottom: 1rem;
 }
 
 .btn-ios:hover {
@@ -211,10 +223,9 @@ p {
 }
 
 .btn-android {
-  max-width: 20.8125rem;
-  width: clamp(18.5rem, 60%, 20.8125rem);
+  width: 100%;
+  max-width: 18.5rem;
   height: 3.8125rem;
-  margin-left: 0.5rem;
   border-radius: 0.75rem;
   border: none;
   font-size: 1.125rem;
