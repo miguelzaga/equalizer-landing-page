@@ -1,0 +1,27 @@
+.footer{
+    margin: rem(12px) 0 rem(64px) 0;
+}
+
+.footer__info {
+    margin-bottom: rem(64px);
+    font-size: 1rem;
+}
+
+.footer__logo {
+    margin-bottom: rem(32px);
+}
+
+.footer__copyright, .footer__contact {
+    font-size: 1rem;
+    line-height: rem(26px);
+}
+
+.footer__email {
+    font-weight: bold;
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: space-between;
+    width: rem(100px);
+}

@@ -89,6 +89,17 @@ p {
   margin-top: 1rem;
 }
 
+.wrapper {
+  width: 100vw;
+  padding: 1.5rem;
+}
+
+.wrapper__bg {
+  position: fixed;
+  z-index: -1;
+  top: -15rem;
+}
+
 .content {
   margin-top: 3.75rem;
 }
@@ -220,15 +231,32 @@ p {
   margin-right: 0.2rem;
 }
 
-.wrapper {
-  width: 100vw;
-  padding: 1.5rem;
+.footer {
+  margin: 0.75rem 0 4rem 0;
 }
 
-.wrapper__bg {
-  position: fixed;
-  z-index: -1;
-  top: -15rem;
+.footer__info {
+  margin-bottom: 4rem;
+  font-size: 1rem;
+}
+
+.footer__logo {
+  margin-bottom: 2rem;
+}
+
+.footer__copyright, .footer__contact {
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+.footer__email {
+  font-weight: bold;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: space-between;
+  width: 6.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */
