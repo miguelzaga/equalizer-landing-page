@@ -193,6 +193,13 @@ p {
 .offer {
   position: relative;
   padding-top: 5.625rem;
+  height: 64rem;
+}
+@media (min-width: 48rem) {
+  .offer {
+    padding-top: 8.625rem;
+    height: 52.125rem;
+  }
 }
 
 .offer__pattern-bg {
@@ -205,11 +212,29 @@ p {
   background-color: #191826;
   border-radius: 0.75rem;
 }
+@media (min-width: 48rem) {
+  .offer__pattern-bg {
+    padding: initial;
+    width: 43.5rem;
+    left: auto;
+  }
+}
 
 .offer__pattern {
   display: block;
   width: 17.5rem;
   margin: 0 auto;
+}
+@media (min-width: 48rem) {
+  .offer__pattern {
+    position: relative;
+    margin: initial;
+    left: 14.3125rem;
+  }
+}
+
+.offer__illustration-bg {
+  height: 37.5rem;
 }
 
 .offer__illustration {
@@ -219,16 +244,32 @@ p {
   position: relative;
   bottom: 5.625rem;
 }
+@media (min-width: 48rem) {
+  .offer__illustration {
+    width: 16.875rem;
+    margin: initial;
+    left: 4rem;
+    bottom: 8.625rem;
+  }
+}
 
 .offer__card {
   width: 100vw;
+  height: 34.125rem;
   position: relative;
   left: -1.5rem;
-  bottom: 3rem;
+  bottom: 13.75rem;
   padding: 3rem 2.25rem;
   border-radius: 0.75rem;
   background-color: #fa7453;
   color: #fcfaf9;
+}
+@media (min-width: 48rem) {
+  .offer__card {
+    width: 24.9375rem;
+    bottom: 28.125rem;
+    left: 14.9375rem;
+  }
 }
 
 .offer__title {
@@ -310,12 +351,24 @@ p {
 }
 
 .footer {
-  margin: 0.75rem 0 4rem 0;
+  margin: 4rem 0 4rem 0;
+}
+@media (min-width: 48rem) {
+  .footer {
+    display: flex;
+    align-items: center;
+    margin: 5.4375rem 0 3.25rem 0;
+  }
 }
 
 .footer__info {
   margin-bottom: 4rem;
   font-size: 1rem;
+}
+@media (min-width: 48rem) {
+  .footer__info {
+    margin-bottom: 0;
+  }
 }
 
 .footer__logo {

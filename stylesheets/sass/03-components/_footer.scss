@@ -1,10 +1,18 @@
 .footer{
-    margin: rem(12px) 0 rem(64px) 0;
+    margin: rem(64px) 0 rem(64px) 0;
+    @include breakpoint($tablet){
+        display: flex;
+        align-items: center;
+        margin: rem(87px) 0 rem(52px) 0;
+    }
 }
 
 .footer__info {
     margin-bottom: rem(64px);
     font-size: 1rem;
+    @include breakpoint($tablet){
+        margin-bottom: 0;
+    }
 }
 
 .footer__logo {

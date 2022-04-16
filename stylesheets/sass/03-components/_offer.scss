@@ -1,6 +1,11 @@
 .offer {
   position: relative;
   padding-top: rem(90px);
+  height: rem(1024px);
+  @include breakpoint($tablet) {
+    padding-top: rem(138px);
+    height: rem(834px);
+  }
 }
 
 .offer__pattern-bg {
@@ -12,12 +17,26 @@
   padding: 0 rem(48px);
   background-color: $black;
   border-radius: rem(12px);
+  @include breakpoint($tablet) {
+    padding: initial;
+    width: rem(696px);
+    left: auto;
+  }
 }
 
 .offer__pattern {
   display: block;
   width: rem(280px);
   margin: 0 auto;
+  @include breakpoint($tablet) {
+    position: relative;
+    margin: initial;
+    left: rem(229px);
+  }
+}
+
+.offer__illustration-bg {
+  height: rem(600px);
 }
 
 .offer__illustration {
@@ -26,17 +45,29 @@
   margin: 0 auto;
   position: relative;
   bottom: rem(90px);
+  @include breakpoint($tablet) {
+    width: rem(270px);
+    margin: initial;
+    left: rem(64px);
+    bottom: rem(138px);
+  }
 }
 
 .offer__card {
   width: 100vw;
+  height: rem(546px);
   position: relative;
   left: -$mobile-pad;
-  bottom: rem(48px);
+  bottom: rem(220px);
   padding: rem(48px) rem(36px);
   border-radius: rem(12px);
   background-color: $orange;
   color: $white;
+  @include breakpoint($tablet) {
+    width: rem(399px);
+    bottom: rem(450px);
+    left: rem(239px);
+  }
 }
 
 .offer__title {
