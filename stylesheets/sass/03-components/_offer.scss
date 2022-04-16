@@ -1,11 +1,12 @@
 .offer {
   position: relative;
-  min-height: rem(926px);
+  padding-top: rem(90px);
 }
 
 .offer__pattern-bg {
   position: absolute;
   z-index: -1;
+  left: -$side-margin;
   width: 100vw;
   height: rem(600px);
   padding: 0 rem(48px);
@@ -14,14 +15,51 @@
 }
 
 .offer__pattern {
-    width: rem(280px);
-  // position: absolute;
-  // width: 100vw;
-  // padding: 0 1.5rem;
-  // background-color: $black;
-  // border-radius: rem(12px);
+  display: block;
+  width: rem(280px);
+  margin: 0 auto;
 }
 
 .offer__illustration {
+  display: block;
   width: rem(208px);
+  margin: 0 auto;
+  position: relative;
+  bottom: rem(90px);
+}
+
+.offer__card {
+    width: 100vw;
+    position: relative;
+    left: -$side-margin;
+    bottom: rem(48px);
+    padding: rem(48px) rem(36px);
+    border-radius: rem(12px);
+    background-color: $orange;
+    color: $white;
+}
+
+.offer__title {
+    font-size: 2rem;
+    line-height: rem(40px);
+    margin-bottom: rem(12px);
+}
+
+.offer__description {
+    font-size: rem(18px);
+    line-height: rem(28px);
+    margin-bottom: rem(4px);
+}
+
+.offer__info {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.offer__price {
+    font-size: rem(65px);
+    line-height: rem(52px);
+    font-weight: bold;
+    margin-right: 1rem;
 }

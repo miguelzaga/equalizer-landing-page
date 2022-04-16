@@ -1,15 +1,18 @@
 .content {
-  padding-top: rem(60px);
+  margin-top: rem(60px);
+}
+
+.content__intro {
+  margin-bottom: rem(68px);
 }
 
 .content__title {
-  padding: 0 $side-margin;
+  margin-bottom: rem(20px);
   font-size: 2.5rem;
   line-height: rem(48px);
 }
 
 .content__description {
-  padding: rem(20px) $side-margin rem(68px);
   font-size: 1rem;
   line-height: rem(26px);
 }
