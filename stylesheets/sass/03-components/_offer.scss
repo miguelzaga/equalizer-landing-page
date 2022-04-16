@@ -6,7 +6,7 @@
 .offer__pattern-bg {
   position: absolute;
   z-index: -1;
-  left: -$side-margin;
+  left: -$mobile-pad;
   width: 100vw;
   height: rem(600px);
   padding: 0 rem(48px);
@@ -31,7 +31,7 @@
 .offer__card {
   width: 100vw;
   position: relative;
-  left: -$side-margin;
+  left: -$mobile-pad;
   bottom: rem(48px);
   padding: rem(48px) rem(36px);
   border-radius: rem(12px);

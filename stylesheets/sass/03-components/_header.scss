@@ -1,3 +1,7 @@
 .header {
-    margin-top: 1rem;
+  margin-top: 1rem;
+  @include breakpoint($tablet) {
+    margin-top: rem(29px);
+    margin-left: rem(6px);
+  }
 }

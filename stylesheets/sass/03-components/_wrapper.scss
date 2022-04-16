@@ -1,10 +1,45 @@
-.wrapper {
-    width: 100vw;
-    padding: $side-margin;
+@mixin fixed-bg {
+  position: fixed;
+  z-index: -1;
 }
 
-.wrapper__bg {
-    position: fixed;
-    z-index: -1;
-    top: -15rem;
+.wrapper {
+  width: 100vw;
+  padding: $mobile-pad;
+
+  @include breakpoint($tablet) {
+    padding: $tablet-pad;
+  }
+}
+
+.wrapper__bg-mobile {
+  @include fixed-bg();
+  top: -15rem;
+
+  @include breakpoint($tablet) {
+    display: none;
+  }
+}
+
+.wrapper__bg-tablet {
+  @include fixed-bg();
+  display: none;
+
+  @include breakpoint($tablet) {
+    display: block;
+    top: -20rem;
+    left: -27rem;
+  }
+}
+
+.wrapper__pattern {
+    display: none;
+
+    @include breakpoint($tablet){
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: rem(266px);
+    }
 }
