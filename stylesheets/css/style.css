@@ -58,10 +58,11 @@ table {
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 body {
+  background-color: #fcfaf9;
   font-family: "IBM Plex Sans", sans-serif;
   color: #191826;
 }
@@ -84,8 +85,52 @@ p {
   line-height: 2.125rem;
 }
 
+.header {
+  padding: 2.5rem 1.5rem 0;
+}
+
+.content {
+  padding-top: 3.75rem;
+}
+
+.content__title {
+  padding: 0 1.5rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.content__description {
+  padding: 1.25rem 1.5rem 4.25rem;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+.offer {
+  position: relative;
+  min-height: 57.875rem;
+}
+
+.offer__pattern-bg {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 37.5rem;
+  padding: 0 3rem;
+  background-color: #191826;
+  border-radius: 0.75rem;
+}
+
+.offer__pattern {
+  width: 17.5rem;
+}
+
+.offer__illustration {
+  width: 13rem;
+}
+
 .btn-ios {
-  width: 20.8125rem;
+  max-width: 20.8125rem;
+  width: 100%;
   height: 3.8125rem;
   border-radius: 0.75rem;
   border: none;
@@ -93,11 +138,11 @@ p {
   font-weight: bold;
   line-height: 2rem;
   background-color: #191826;
-  color: #FCFAF9;
+  color: #fcfaf9;
 }
 
 .btn-ios:hover {
-  background-color: #66E2DC;
+  background-color: #66e2dc;
 }
 
 .btn-ios__icon {
@@ -106,22 +151,29 @@ p {
 }
 
 .btn-android {
-  width: 20.8125rem;
+  max-width: 20.8125rem;
+  width: 100%;
   height: 3.8125rem;
   border-radius: 0.75rem;
   border: none;
   font-size: 1.125rem;
   font-weight: bold;
   line-height: 2rem;
-  background-color: #FCFAF9;
+  background-color: #fcfaf9;
 }
 
 .btn-android:hover {
-  background-color: #FFB964;
+  background-color: #ffb964;
 }
 
 .btn-android__icon {
   margin-right: 0.2rem;
+}
+
+.wrapper__bg {
+  position: absolute;
+  z-index: -1;
+  top: -15rem;
 }
 
 /*# sourceMappingURL=style.css.map */

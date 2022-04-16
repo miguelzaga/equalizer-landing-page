@@ -1,9 +1,15 @@
 // Colors
-$cyan: #66E2DC;
-$orange: #FA7453;
-$yellow: #FFB964;
-$white: #FCFAF9;
+$cyan: #66e2dc;
+$orange: #fa7453;
+$yellow: #ffb964;
+$white: #fcfaf9;
 $black: #191826;
 
 // Typography
-$font-ibm: 'IBM Plex Sans', sans-serif;
+$font-ibm: "IBM Plex Sans", sans-serif;
+
+// Breakpoints
+$tablet: rem(768px);
+$desktop: rem(1440px);
+
+$side-margin: 1.5rem;

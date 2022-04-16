@@ -1,0 +1,15 @@
+.content {
+  padding-top: rem(60px);
+}
+
+.content__title {
+  padding: 0 $side-margin;
+  font-size: 2.5rem;
+  line-height: rem(48px);
+}
+
+.content__description {
+  padding: rem(20px) $side-margin rem(68px);
+  font-size: 1rem;
+  line-height: rem(26px);
+}

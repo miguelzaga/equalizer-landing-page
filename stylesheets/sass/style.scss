@@ -4,9 +4,12 @@
 
 @import '02-base/resets';
 @import '02-base/boilerplate';
+@import '02-base/layout';
 @import '02-base/typography';
 
-@import '03-objects/buttons'
-
-
+@import '03-components/header';
+@import '03-components/content';
+@import '03-components/offer';
+@import '03-components/buttons';
+@import '03-components/wrapper';
 

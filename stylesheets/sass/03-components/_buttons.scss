@@ -1,5 +1,6 @@
 @mixin btn {
-  width: rem(333px);
+  max-width: rem(333px);
+  width: 100%;
   height: rem(61px);
   border-radius: rem(12px);
   border: none;

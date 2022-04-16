@@ -1,0 +1,27 @@
+.offer {
+  position: relative;
+  min-height: rem(926px);
+}
+
+.offer__pattern-bg {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: rem(600px);
+  padding: 0 rem(48px);
+  background-color: $black;
+  border-radius: rem(12px);
+}
+
+.offer__pattern {
+    width: rem(280px);
+  // position: absolute;
+  // width: 100vw;
+  // padding: 0 1.5rem;
+  // background-color: $black;
+  // border-radius: rem(12px);
+}
+
+.offer__illustration {
+  width: rem(208px);
+}
