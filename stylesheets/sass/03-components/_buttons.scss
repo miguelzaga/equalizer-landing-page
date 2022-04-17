@@ -30,6 +30,7 @@
 .btn-ios__icon {
   @include icon-right();
   vertical-align: middle;
+  margin-bottom: 0.25rem;
 }
 
 .btn-android {

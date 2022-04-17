@@ -458,6 +458,7 @@ p {
 .btn-ios__icon {
   margin-right: 0.2rem;
   vertical-align: middle;
+  margin-bottom: 0.25rem;
 }
 
 .btn-android {
