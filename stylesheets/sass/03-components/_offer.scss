@@ -8,6 +8,11 @@
     height: rem(834px);
     margin: 0 auto;
   }
+  @include breakpoint($desktop) {
+    padding-top: rem(213px);
+    height: rem(834px);
+    margin: 0 auto;
+  }
 }
 
 .offer__pattern-bg {
