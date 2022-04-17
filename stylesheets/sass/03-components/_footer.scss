@@ -8,6 +8,7 @@
     margin: rem(87px) 0 rem(52px) 0;
   }
   @include breakpoint($desktop) {
+    margin: 0 0 rem(29px) 0;
   }
 }
 

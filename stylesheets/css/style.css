@@ -273,8 +273,9 @@ p {
 @media (min-width: 90rem) {
   .offer {
     padding-top: 13.3125rem;
-    height: 52.125rem;
+    height: 69.375rem;
     margin: 0 auto;
+    margin-bottom: -5.8125rem;
   }
 }
 
@@ -507,6 +508,12 @@ p {
     margin: 5.4375rem 0 3.25rem 0;
   }
 }
+@media (min-width: 90rem) {
+  .footer {
+    margin: 0 0 1.8125rem 0;
+  }
+}
+
 .footer__info {
   margin-bottom: 4rem;
   font-size: 1rem;

@@ -10,8 +10,9 @@
   }
   @include breakpoint($desktop) {
     padding-top: rem(213px);
-    height: rem(834px);
+    height: rem(1110px);
     margin: 0 auto;
+    margin-bottom: rem(87px - 180px);
   }
 }
 
