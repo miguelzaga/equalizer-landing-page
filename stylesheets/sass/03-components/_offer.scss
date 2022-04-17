@@ -6,13 +6,14 @@
   @include breakpoint($tablet) {
     padding-top: rem(138px);
     height: rem(834px);
+    margin: 0 auto;
   }
 }
 
 .offer__pattern-bg {
   position: absolute;
   z-index: -1;
-  left: -$mobile-pad;
+  right: $mobile-pad;
   width: 100%;
   height: rem(600px);
   padding: 0 rem(48px);
@@ -21,7 +22,7 @@
   @include breakpoint($tablet) {
     padding: initial;
     width: rem(696px);
-    left: auto;
+    right: auto;
   }
 }
 
@@ -67,6 +68,7 @@
 
   @include breakpoint($tablet) {
     margin: initial;
+    max-width: initial;
     width: rem(399px);
     bottom: rem(450px);
     left: rem(239px);

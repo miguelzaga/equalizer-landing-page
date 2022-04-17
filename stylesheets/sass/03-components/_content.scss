@@ -1,7 +1,10 @@
 .content {
   margin-top: rem(60px);
-  @include breakpoint($tablet){
-    margin-top: rem(95px)
+  @include breakpoint($tablet) {
+    margin-top: rem(95px);
+  }
+  @include breakpoint($desktop) {
+    margin-top: rem(127px);
   }
 }
 
@@ -11,6 +14,11 @@
     margin-bottom: rem(111px);
     margin-left: rem(6px);
     width: rem(520px);
+  }
+  @include breakpoint($desktop) {
+    margin-bottom: rem(108px);
+    margin-left: 0;
+    width: auto;
   }
 }
 
@@ -23,6 +31,12 @@
     font-size: rem(64px);
     line-height: rem(64px);
   }
+  @include breakpoint($desktop) {
+    max-width: rem(1015px);
+    margin-bottom: rem(40px);
+    font-size: rem(88px);
+    line-height: rem(88px);
+  }
 }
 
 .content__description {
@@ -31,5 +45,10 @@
   @include breakpoint($tablet) {
     font-size: rem(18px);
     line-height: rem(28px);
+  }
+  @include breakpoint($desktop) {
+    max-width: rem(825px);
+    font-size: rem(20px);
+    line-height: rem(34px);
   }
 }

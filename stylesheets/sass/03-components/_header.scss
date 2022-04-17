@@ -4,4 +4,8 @@
     margin-top: rem(29px);
     margin-left: rem(6px);
   }
+  @include breakpoint($desktop){
+    margin-top: 0;
+    margin-left: 0;
+  }
 }

@@ -10,6 +10,9 @@
   @include breakpoint($tablet) {
     padding: $tablet-pad;
   }
+  @include breakpoint($desktop) {
+    padding: rem(62px) $desktop-pad;
+  }
 }
 
 .wrapper__bg-mobile {
@@ -27,10 +30,26 @@
 
   @include breakpoint($tablet) {
     display: block;
-    top: -20rem;
+    top: -15rem;
+    left: -27rem;
+  }
+  @include breakpoint($desktop) {
+    display: none;
+  }
+}
+
+.wrapper__bg-desktop {
+  @include fixed-bg();
+  display: none;
+  
+  @include breakpoint($desktop) {
+    display: block;
+    top: -15rem;
     left: -27rem;
   }
 }
+
+
 
 .wrapper__pattern {
   display: none;
@@ -41,5 +60,11 @@
     top: rem(-32px);
     right: rem(-35.67px);
     width: rem(266px);
+  }
+
+  @include breakpoint($desktop) {
+    top: rem(-32px);
+    right: 0;
+    width: fit-content;
   }
 }
