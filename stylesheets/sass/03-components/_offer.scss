@@ -2,6 +2,7 @@
   position: relative;
   padding-top: rem(90px);
   height: rem(1024px);
+  width: calc(100% + $mobile-pad * 2);
   @include breakpoint($tablet) {
     padding-top: rem(138px);
     height: rem(834px);
@@ -12,7 +13,7 @@
   position: absolute;
   z-index: -1;
   left: -$mobile-pad;
-  width: 100vw;
+  width: 100%;
   height: rem(600px);
   padding: 0 rem(48px);
   background-color: $black;
@@ -26,7 +27,8 @@
 
 .offer__pattern {
   display: block;
-  width: rem(280px);
+  width: 100%;
+  max-width: rem(280px);
   margin: 0 auto;
   @include breakpoint($tablet) {
     position: relative;
@@ -35,16 +37,13 @@
   }
 }
 
-.offer__illustration-bg {
-  height: rem(600px);
-}
-
 .offer__illustration {
   display: block;
   width: rem(208px);
   margin: 0 auto;
   position: relative;
-  bottom: rem(90px);
+  right: $mobile-pad;
+  bottom: rem(98px);
   @include breakpoint($tablet) {
     width: rem(270px);
     margin: initial;
@@ -54,16 +53,20 @@
 }
 
 .offer__card {
-  width: 100vw;
+  max-width: 375px;
+  width: 100%;
   height: rem(546px);
+  margin: 0 auto;
   position: relative;
-  left: -$mobile-pad;
-  bottom: rem(220px);
+  right: $mobile-pad;
+  bottom: rem(50px);
   padding: rem(48px) rem(36px);
   border-radius: rem(12px);
   background-color: $orange;
   color: $white;
+
   @include breakpoint($tablet) {
+    margin: initial;
     width: rem(399px);
     bottom: rem(450px);
     left: rem(239px);

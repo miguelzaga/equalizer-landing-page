@@ -138,10 +138,10 @@ p {
 }
 @media (min-width: 48rem) {
   .wrapper__pattern {
-    display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    display: block;
+    top: -2rem;
+    right: -2.229375rem;
     width: 16.625rem;
   }
 }
@@ -194,6 +194,7 @@ p {
   position: relative;
   padding-top: 5.625rem;
   height: 64rem;
+  width: calc(100% + 3rem);
 }
 @media (min-width: 48rem) {
   .offer {
@@ -206,7 +207,7 @@ p {
   position: absolute;
   z-index: -1;
   left: -1.5rem;
-  width: 100vw;
+  width: 100%;
   height: 37.5rem;
   padding: 0 3rem;
   background-color: #191826;
@@ -222,7 +223,8 @@ p {
 
 .offer__pattern {
   display: block;
-  width: 17.5rem;
+  width: 100%;
+  max-width: 17.5rem;
   margin: 0 auto;
 }
 @media (min-width: 48rem) {
@@ -233,16 +235,13 @@ p {
   }
 }
 
-.offer__illustration-bg {
-  height: 37.5rem;
-}
-
 .offer__illustration {
   display: block;
   width: 13rem;
   margin: 0 auto;
   position: relative;
-  bottom: 5.625rem;
+  right: 1.5rem;
+  bottom: 6.125rem;
 }
 @media (min-width: 48rem) {
   .offer__illustration {
@@ -254,11 +253,13 @@ p {
 }
 
 .offer__card {
-  width: 100vw;
+  max-width: 375px;
+  width: 100%;
   height: 34.125rem;
+  margin: 0 auto;
   position: relative;
-  left: -1.5rem;
-  bottom: 13.75rem;
+  right: 1.5rem;
+  bottom: 3.125rem;
   padding: 3rem 2.25rem;
   border-radius: 0.75rem;
   background-color: #fa7453;
@@ -266,6 +267,7 @@ p {
 }
 @media (min-width: 48rem) {
   .offer__card {
+    margin: initial;
     width: 24.9375rem;
     bottom: 28.125rem;
     left: 14.9375rem;

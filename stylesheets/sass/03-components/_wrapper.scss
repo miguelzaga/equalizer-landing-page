@@ -33,13 +33,13 @@
 }
 
 .wrapper__pattern {
-    display: none;
+  display: none;
 
-    @include breakpoint($tablet){
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: rem(266px);
-    }
+  @include breakpoint($tablet) {
+    position: absolute;
+    display: block;
+    top: rem(-32px);
+    right: rem(-35.67px);
+    width: rem(266px);
+  }
 }
