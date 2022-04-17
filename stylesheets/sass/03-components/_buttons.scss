@@ -7,6 +7,9 @@
   font-size: rem(18px);
   font-weight: bold;
   line-height: rem(32px);
+  @include breakpoint($desktop){
+    max-width: rem(333px);
+  }
 }
 
 @mixin icon-right {

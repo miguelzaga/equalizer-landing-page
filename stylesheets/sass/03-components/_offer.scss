@@ -24,6 +24,9 @@
     width: rem(696px);
     right: auto;
   }
+  @include breakpoint($desktop) {
+    width: rem(1110px);
+  }
 }
 
 .offer__pattern {
@@ -35,6 +38,11 @@
     position: relative;
     margin: initial;
     left: rem(229px);
+    bottom: rem(40px);
+  }
+  @include breakpoint($desktop) {
+    max-width: rem(312px);
+    left: rem(336px);
   }
 }
 
@@ -51,6 +59,11 @@
     left: rem(64px);
     bottom: rem(138px);
   }
+  @include breakpoint($desktop) {
+    width: rem(312px);
+    left: rem(102px);
+    bottom: rem(213px);
+  }
 }
 
 .offer__card {
@@ -65,13 +78,19 @@
   border-radius: rem(12px);
   background-color: $orange;
   color: $white;
-
   @include breakpoint($tablet) {
     margin: initial;
     max-width: initial;
     width: rem(399px);
-    bottom: rem(450px);
-    left: rem(239px);
+    bottom: rem(calc(268px + 138px));
+    left: rem(calc(175px + 64px));
+  }
+  @include breakpoint($desktop) {
+    width: rem(446px);
+    height: rem(625px);
+    left: rem(calc(312px + 147px + 102px));
+    bottom: rem(calc(339px + 213px));
+    padding: rem(58px) rem(59px) rem(48px) rem(54px);
   }
 }
 
@@ -79,18 +98,31 @@
   font-size: 2rem;
   line-height: rem(40px);
   margin-bottom: rem(12px);
+  @include breakpoint($desktop) {
+    font-size: rem(40px);
+    line-height: rem(52px);
+    margin-bottom: rem(22px);
+  }
 }
 
 .offer__description {
   font-size: rem(18px);
   line-height: rem(28px);
   margin-bottom: rem(4px);
+  @include breakpoint($desktop) {
+    font-size: rem(20px);
+    line-height: rem(34px);
+    margin-bottom: rem(6px);
+  }
 }
 
 .offer__info {
   margin: 2rem 0 2rem 0.5rem;
   display: flex;
   align-items: center;
+  @include breakpoint($desktop) {
+    margin: rem(36px) 0 rem(46px) 0;
+  }
 }
 
 .offer__price {
@@ -105,6 +137,10 @@
   flex-direction: column;
   align-items: center;
   margin-left: 0.5rem;
+  @include breakpoint($desktop) {
+    margin-left: 0;
+    align-items: flex-start;
+  }
 }
 
 .offer__btn-ios {
