@@ -1,17 +1,21 @@
 @mixin fixed-bg {
-  position: fixed;
+  position: absolute;
   z-index: -1;
 }
 
 .wrapper {
-  width: 100vw;
+  position: relative;
   padding: $mobile-pad;
+  max-width: $mobile;
+  margin: 0 auto;
 
   @include breakpoint($tablet) {
     padding: $tablet-pad;
+    max-width: $tablet;
   }
   @include breakpoint($desktop) {
     padding: rem(62px) $desktop-pad;
+    max-width: $desktop;
   }
 }
 
@@ -41,15 +45,13 @@
 .wrapper__bg-desktop {
   @include fixed-bg();
   display: none;
-  
+
   @include breakpoint($desktop) {
     display: block;
-    top: -15rem;
-    left: -27rem;
+    top: -20rem;
+    left: -18rem;
   }
 }
-
-
 
 .wrapper__pattern {
   display: none;

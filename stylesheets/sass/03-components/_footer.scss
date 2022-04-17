@@ -1,35 +1,69 @@
-.footer{
-    margin: rem(64px) 0 rem(64px) 0;
-    @include breakpoint($tablet){
-        display: flex;
-        align-items: center;
-        margin: rem(87px) 0 rem(52px) 0;
-    }
+.footer {
+  margin: rem(64px) 0 rem(64px) 0;
+  @include breakpoint($tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: rem(87px) 0 rem(52px) 0;
+  }
+  @include breakpoint($desktop) {
+  }
 }
 
 .footer__info {
-    margin-bottom: rem(64px);
-    font-size: 1rem;
-    @include breakpoint($tablet){
-        margin-bottom: 0;
-    }
+  margin-bottom: rem(64px);
+  font-size: 1rem;
+  @include breakpoint($tablet) {
+    height: rem(79px);
+    width: rem(366px);
+    margin-bottom: 0;
+  }
+  @include breakpoint($desktop) {
+    margin-right: rem(calc(359px - 137px));
+  }
+}
+
+.footer__logo-container {
+  @include breakpoint($tablet) {
+    flex-basis: 100%;
+  }
+  @include breakpoint($desktop) {
+    flex-basis: initial;
+  }
 }
 
 .footer__logo {
-    margin-bottom: rem(32px);
+  margin-bottom: rem(32px);
+  @include breakpoint($desktop) {
+    // margin-bottom: rem(47px);
+  }
 }
 
-.footer__copyright, .footer__contact {
-    font-size: 1rem;
-    line-height: rem(26px);
+.footer__copyright,
+.footer__contact {
+  font-size: 1rem;
+  line-height: rem(26px);
 }
 
 .footer__email {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .footer__socials {
-    display: flex;
-    justify-content: space-between;
-    width: rem(100px);
+  display: flex;
+  justify-content: space-between;
+  width: rem(100px);
+}
+
+.footer__facebook path,
+.footer__instagram path,
+.footer__twitter path {
+  transition: $hover-transition;
+}
+
+.footer__facebook:hover path,
+.footer__instagram:hover path,
+.footer__twitter:hover path {
+    fill: $orange;
 }

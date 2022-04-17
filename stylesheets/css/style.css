@@ -106,22 +106,26 @@ p {
 }
 
 .wrapper {
-  width: 100vw;
+  position: relative;
   padding: 1.5rem;
+  max-width: 23.4375rem;
+  margin: 0 auto;
 }
 @media (min-width: 48rem) {
   .wrapper {
     padding: 2.0625rem;
+    max-width: 48rem;
   }
 }
 @media (min-width: 90rem) {
   .wrapper {
     padding: 3.875rem 10.3125rem;
+    max-width: 90rem;
   }
 }
 
 .wrapper__bg-mobile {
-  position: fixed;
+  position: absolute;
   z-index: -1;
   top: -15rem;
 }
@@ -132,7 +136,7 @@ p {
 }
 
 .wrapper__bg-tablet {
-  position: fixed;
+  position: absolute;
   z-index: -1;
   display: none;
 }
@@ -150,15 +154,15 @@ p {
 }
 
 .wrapper__bg-desktop {
-  position: fixed;
+  position: absolute;
   z-index: -1;
   display: none;
 }
 @media (min-width: 90rem) {
   .wrapper__bg-desktop {
     display: block;
-    top: -15rem;
-    left: -27rem;
+    top: -20rem;
+    left: -18rem;
   }
 }
 
@@ -437,6 +441,7 @@ p {
   font-size: 1.125rem;
   font-weight: bold;
   line-height: 2rem;
+  transition: ease-in-out, 0.3s;
   background-color: #191826;
   color: #fcfaf9;
 }
@@ -464,6 +469,7 @@ p {
   font-size: 1.125rem;
   font-weight: bold;
   line-height: 2rem;
+  transition: ease-in-out, 0.3s;
   background-color: #fcfaf9;
   color: #191826;
 }
@@ -487,26 +493,45 @@ p {
 @media (min-width: 48rem) {
   .footer {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     margin: 5.4375rem 0 3.25rem 0;
   }
 }
-
 .footer__info {
   margin-bottom: 4rem;
   font-size: 1rem;
 }
 @media (min-width: 48rem) {
   .footer__info {
+    height: 4.9375rem;
+    width: 22.875rem;
     margin-bottom: 0;
+  }
+}
+@media (min-width: 90rem) {
+  .footer__info {
+    margin-right: 13.875rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .footer__logo-container {
+    flex-basis: 100%;
+  }
+}
+@media (min-width: 90rem) {
+  .footer__logo-container {
+    flex-basis: initial;
   }
 }
 
 .footer__logo {
   margin-bottom: 2rem;
 }
-
-.footer__copyright, .footer__contact {
+.footer__copyright,
+.footer__contact {
   font-size: 1rem;
   line-height: 1.625rem;
 }
@@ -519,6 +544,18 @@ p {
   display: flex;
   justify-content: space-between;
   width: 6.25rem;
+}
+
+.footer__facebook path,
+.footer__instagram path,
+.footer__twitter path {
+  transition: ease-in-out, 0.3s;
+}
+
+.footer__facebook:hover path,
+.footer__instagram:hover path,
+.footer__twitter:hover path {
+  fill: #fa7453;
 }
 
 /*# sourceMappingURL=style.css.map */

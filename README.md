@@ -14,7 +14,6 @@ This is a solution to the [Equalizer landing page challenge on Frontend Mentor](
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -55,14 +54,9 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [Building Our Sass Architecture](https://css-irl.info/a-modern-front-end-workflow-part-3/) - This helped me to organize my Sass files.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Using SVG](https://css-tricks.com/using-svg/) - It helped me achieve the hover effect on the social icons.
 
 ## Author
 
 - Frontend Mentor - [@miguelzaga](https://www.frontendmentor.io/profile/miguelzaga)
 - Linkedin - [Miguel Zapata](https://www.linkedin.com/in/miguelzaga/)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-

@@ -9,9 +9,14 @@ $black: #191826;
 $font-ibm: "IBM Plex Sans", sans-serif;
 
 // Breakpoints
+$mobile: rem(375px);
 $tablet: rem(768px);
 $desktop: rem(1440px);
 
+// Paddings
 $mobile-pad: 1.5rem;
 $tablet-pad: rem(33px);
 $desktop-pad: rem(165px);
+
+// Transition
+$hover-transition: ease-in-out, 0.3s;
